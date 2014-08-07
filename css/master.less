@@ -1,0 +1,57 @@
+@import '../bower_components/bootstrap/less/bootstrap';
+
+header{
+	position: relative;
+	z-index: 5;
+	nav{
+		&#main-nav{
+			.clearfix();
+			height: 109px;
+			position: relative;
+			z-index: 3;
+			background: black;
+			.brand.centered{
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin-left: -66px;
+			}
+			ul.main-nav{
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+				.clearfix();
+				float: left;
+				width: 50%;
+				.box-sizing(border-box);
+				&.nav-left{
+					padding-right: 66px;
+				}
+				&.nav-right{
+					padding-left: 66px;
+				}
+				li{
+					width: 33.3333333%;
+					float: left;
+					text-align: center;
+				}
+			}
+		}
+		&#sub-nav{
+			position: relative;
+			z-index: 2;
+			background: blue;
+			padding-top: 40px;
+			&.affix{
+				position: fixed;
+				width: 100%;
+				.box-sizing(border-box);
+				top: 0;
+			}
+		}
+	}
+}
+
+#stretch{
+	height: 2000px;
+}
